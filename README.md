@@ -1,3 +1,2 @@
 # Project-Euler
-# Project-Euler
-# Project_Euler
+Working through the programming math challenges from the Project Euler website. 
