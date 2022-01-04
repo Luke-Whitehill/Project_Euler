@@ -20,6 +20,12 @@ int main()
   int nMax = 0;
   for (int a = -999; a < 1000;a+=2){
       for (int b = 0; b <= 1000; b++){
+        // a is always odd in order to find a prime number
+        // with a quadratic formula n*n + a*n + b
+        // same with b, when n = 0, the quadratic must be prime
+        // so b is a prime number and primes are non-negative
+        // so loop is from 0 instead of -1000 like the problem
+        // states, halving the iterations again just like a. 
         int n = 0;
         while (isPrime(n*n + a*n + b) == 1){
           n++;
