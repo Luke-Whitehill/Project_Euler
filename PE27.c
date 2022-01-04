@@ -18,13 +18,12 @@ int main()
   int aMax;
   int bMax;
   int nMax = 0;
-  for (int a = -999; a < 1000;a++){
+  for (int a = -999; a < 1000;a+=2){
       for (int b = 0; b <= 1000; b++){
         int n = 0;
         while (isPrime(n*n + a*n + b) == 1){
           n++;
         }
-        //printf("%d", n);
         if (n > nMax){
           nMax = n;
           aMax = a;
